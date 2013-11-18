@@ -1,0 +1,467 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usetheme{Madrid}
+\hypersetup{pdfpagemode=None}
+\usepackage{tikz}
+\usepackage{bbm}
+\usetikzlibrary{shapes.multipart}
+\usetikzlibrary{decorations.pathreplacing}
+
+\setbeamertemplate{caption}[numbered]
+\useoutertheme{infolines}
+\usecolortheme[named=RoyalBlue]{structure}
+
+\setbeamertemplate{items}[square]
+\setbeamertemplate{sections/subsections in toc}[square]
+   \setbeamercolor{section number projected}{bg=RoyalBlue,fg=white}
+
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \begin{center}
+\textcolor{RoyalBlue}{\Huge{\insertsection}}
+    \end{center}
+  \end{frame}
+}
+\end_preamble
+\options xcolor=dvipsnames, handout
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans lmss
+\font_typewriter lmtt
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_amsmath 2
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch Deleted
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Introduction to R (slide 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+theframenumber 
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+Introduction to R - Problemset 1
+\end_layout
+
+\begin_layout Author
+Stefan Schmaltz & Pascal Rakers
+\end_layout
+
+\begin_layout Institute
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+HSG
+\end_layout
+
+\end_inset
+
+
+\size larger
+ Comparing European and Swiss Regulation for Insurance Companies
+\end_layout
+
+\begin_layout Date
+Fall Semester 2013
+\end_layout
+
+\begin_layout Section*
+Outlines
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Most of the content has been deleted to reduce size, and a generic theme
+ is used here.
+\end_layout
+
+\begin_layout Plain Layout
+The actual presentation used a customized theme with school logos and colors.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+beamersetuncovermixins{
+\backslash
+opaqueness<1->{45}}{
+\backslash
+opaqueness<1->{95}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Outline
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[pausesections]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Starting Situation
+\end_layout
+
+\begin_layout BeginFrame
+Slide 1
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1>
+\end_layout
+
+\end_inset
+
+Hourly spot prices
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Defined as an day-ahead hour contract on power with a specified delivery
+ hour and place of delivery
+\end_layout
+
+\end_inset
+
+ for PHELIX and SWISSIX electricity indices 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2>
+\end_layout
+
+\end_inset
+
+24h ahead interval forecasts provided by Delta Energy Solution AG and ior/cf-HSG
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3>
+\end_layout
+
+\end_inset
+
+Data set from January 2011 until December 2012
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4>
+\end_layout
+
+\end_inset
+
+Forecasts are based on a GARCH model
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5>
+\end_layout
+
+\end_inset
+
+All Prices in €/MWh
+\end_layout
+
+\begin_layout BeginFrame
+Slide 2
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1>
+\end_layout
+
+\end_inset
+
+asd
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2>
+\end_layout
+
+\end_inset
+
+asd
+\end_layout
+
+\begin_layout Section
+Analysis
+\end_layout
+
+\begin_layout BeginFrame
+Slide 1
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1>
+\end_layout
+
+\end_inset
+
+asd
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2>
+\end_layout
+
+\end_inset
+
+asd
+\end_layout
+
+\begin_layout Section
+\begin_inset Quotes eld
+\end_inset
+
+I-wish-I-had-known-before
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Slide 1
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1>
+\end_layout
+
+\end_inset
+
+asd
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2>
+\end_layout
+
+\end_inset
+
+asd
+\end_layout
+
+\begin_layout BeginFrame
+The End
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+\size largest
+Thank you for your attention!
+\end_layout
+
+\begin_layout BeginFrame
+Literature
+\end_layout
+
+\begin_layout Enumerate
+Knaus, Simon: 
+\shape italic
+Introduction to R
+\shape default
+, Lecture notes University St.Gallen, 2013
+\end_layout
+
+\begin_layout Enumerate
+McNeil, A.J., Frey, R.
+ and Embrechts, P.: 
+\shape italic
+Quantitative Risk Management: Concepts, Techniques, Tools
+\shape default
+, Princeton Series in Finance, 2005
+\end_layout
+
+\begin_layout Enumerate
+Danielsson, Jon
+\shape italic
+: Financial risk forecasting: the theory and practice of forecasting market
+ risk with implementation in R and Matlab
+\shape default
+, Wiley-Blackwell, 2011
+\end_layout
+
+\begin_layout Section
+Appendix
+\end_layout
+
+\begin_layout BeginFrame
+Appendix
+\end_layout
+
+\begin_layout Standard
+asd
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document
